@@ -207,3 +207,37 @@ ul {
     text-align: center;
     color: gray;
 }
+.contact-us{
+    display: grid;
+    background-color: rgb(230, 226, 222);
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows:repeat(2,400px);
+    grid-template-areas:
+        ". m m m m m m m m m m m m m m m m m m ."
+        ". . . . . . s s s s s s s . . . . . . ."
+        
+    ;
+}
+.contact-us{
+    
+    background-color: rgb(230, 226, 222);
+    
+}
+.roww11{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: m;
+    
+}
+.row12{
+    display: flex;
+    flex-direction: column;
+    margin-top: -5em;
+    grid-area: s;
+}
+.btn-submit{
+    display: flex;
+    justify-content: center;
+    padding-left: 10pc;
+}
