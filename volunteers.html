@@ -5,13 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/volunteers.css">
-    <title>Volunteers</title>  
+    <link rel="stylesheet" href="/index.css">
+    <title>Volunteers</title> 
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');
+    </style>
+
 </head>
 
 <body>
   <body>
 
     <header>
+      <div class="header-icon-container">
+        <a href="#">
+          <img src="/IMAGES/footbal icon.png" class="header-icon">
+        </a>
+      </div>
       <nav>
         <ul class="nav_container">
           <li>
@@ -33,16 +43,18 @@
 
     <section id="volunteers-form" class="contact-wrap">
       <h1 class="center">Volunteer for us!</h1>
-      <h2>
+      <h3>
         Do you want to join our community as a volunteer? We are looking for
         people with ambition, creativity and commitment to help deliver our
-        community. Please fill out the form below
-      </h2>
+        community. Please fill out the form below:
+      </h3>
+      
       <div class="container">
+
   <form action="/action_page.php">
   <div class="row">
     <div class="col-25">
-      <label for="fname">First Name</label>
+      <label for="fname">First Name:</label>
     </div>
     <div class="col-75">
       <input type="text" id="fname" name="firstname" placeholder="Your name">
@@ -50,7 +62,7 @@
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="lname">Last Name</label>
+      <label for="lname">Last Name:</label>
     </div>
     <div class="col-75">
       <input type="text" id="lname" name="lastname" placeholder="Your last name">
@@ -58,7 +70,7 @@
   </div>
     <div class="row">
     <div class="col-25">
-      <label for="email">Your email</label>
+      <label for="email">Your email:</label>
     </div>
     <div class="col-75">
       <input type="email" id="email" name="YourEmail" placeholder="Your email">
@@ -66,7 +78,7 @@
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="learnAboutUs">Where did you learn about us?</label>
+      <label for="learnAboutUs">Where did you learn about us?:</label>
     </div>
     <div class="col-75">
       <select id="learnAboutUs" name="learnAboutUs">
@@ -78,7 +90,7 @@
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="subject">How can you help our community? PLease provide as many details as possible.</label>
+      <label for="subject">How can you help our community? Please provide as many details as possible:</label>
     </div>
     <div class="col-75">
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
@@ -86,20 +98,20 @@
   </div>
   <br>
   <div class="row">
-    <input type="submit" value="Submit">
+    <button> Submit</button>
   </div>
   </form>
+
 </div>
-      </form>
-    </section>
-    <section>
-      <h1 class="center">Our Photos</h1>
-      <div class="header" id="myHeader">
-  <p>Click on the buttons to change the size.</p>
-  <button class="btn" onclick="one()">Big</button>
-  <button class="btn active" onclick="two()">Medium </button>
-  <button class="btn" onclick="four()">Small </button>
-</div>
+
+    <hr>
+    <h1 class="center">Check out our Photos!</h1>
+    <div class="header" id="myHeader">
+        <p>Click on the buttons to change the size.</p>
+        <button class="btn" onclick="one()">Big</button>
+        <button class="btn" onclick="two()">Medium </button>
+        <button class="btn" onclick="four()">Small </button>
+    </div>
 
 <!-- Photo Grid -->
 <div class="row"> 
