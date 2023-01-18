@@ -1,6 +1,5 @@
 /* VOLUNTEERS */
 
-
 /* form */
 .center {
     text-align: center;
@@ -119,7 +118,7 @@ input[type=submit]:hover {
 
 hr {
     margin: 50px 200px 25px 200px;
-    color:#576C59;
+    color: #576C59;
 }
 
 /*image carousel*/
@@ -172,7 +171,8 @@ body {
     font-weight: 100;
     font-size: 17px;
     text-align: center;
-    padding: 10px 20px 10px 20px;;
+    padding: 10px 20px 10px 20px;
+    ;
     width: 100px;
     margin: 30px 10px 0 10px;
 }
@@ -185,87 +185,6 @@ body {
     background-color: #666;
     color: white;
 } */
-
-.row button {
-    color: white;
-    background-color: #576C59;
-    border: none;
-    border-radius: 1.5rem;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    font-size: 17px;
-    padding: 1rem 2rem 1rem 2rem;
-    width: 200px;
-    margin: auto;
-    margin-top: 30px;
-}
-
-.row button:hover {
-    background-color: #ff6600;
-}
-
-
-*/ contact us page */
-
-.contact_icon_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5px;
-    padding: 5px;
-}
-
-.contact_icon {
-    height: 30px;
-    width: 30px;
-    border: solid grey;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 0 20px;
-}
-
-.contact_icon:hover {
-    background-color: #FFE8DE;
-    border-color: black;
-}
-
-.copyright {
-    padding: 10px;
-    text-align: center;
-    color: gray;
-}
-.contact-us{
-    display: grid;
-    background-color: rgb(230, 226, 222);
-    grid-template-columns: repeat(20,1fr);
-    grid-template-rows:repeat(2,400px);
-    grid-template-areas:
-        ". m m m m m m m m m m m m m m m m m m ."
-        ". . . . . . s s s s s s s . . . . . . ."
-    ;
-}
-
-.contact-us{
-    background-color: rgb(230, 226, 222); 
-}
-
-.roww11{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: m;
-    
-}
-.row12{
-    display: flex;
-    flex-direction: column;
-    margin-top: -5em;
-    grid-area: s;
-}
-.btn-submit{
-    display: flex;
-    justify-content: center;
-    padding-left: 10pc;
 
 .row button {
     color: white;
