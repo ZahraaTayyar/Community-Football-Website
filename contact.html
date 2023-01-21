@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Football Meet</title>
     <link rel="stylesheet" href="/index.css">
-    <link rel="stylesheet" href="/volunteers.css">
+    <!-- <link rel="stylesheet" href="/volunteers.css"> -->
     <link rel="stylesheet" href="/contact.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap');
@@ -17,84 +17,63 @@
 <body>
 
     <header>
-        <nav>
-            <ul class="nav_container">
-                <li>
-                    <a class="nav_item" id="home_nav" href="/index.html">Home</a>
-                </li>
-                <li>
-                    <a class="nav_item" id="players_nav" href="/players.html">Players</a>
-                </li>
-                <li>
-                    <a class="nav_item" id="volunteers_nav" href="/volunteers.html">Volunteers</a>
-                </li>
-                <li>
-                    <a class="nav_item" id="contact_nav" href="/volunteers.html">Contact us</a>
-                </li>
-            </ul>
-        </nav>
+      <div class="header-icon-container">
+        <a href="#">
+          <img src="/IMAGES/footbal icon.png" class="header-icon">
+        </a>
+      </div>
+      <nav>
+        <ul class="nav_container">
+          <li>
+            <a class="nav_item" id="home_nav" href="/index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav_item" id="players_nav" href="/players.html">Players</a>
+          </li>
+          <li>
+            <a class="nav_item" id="volunteers_nav" href="/volunteers.html">Volunteers</a>
+          </li>
+          <li>
+            <a class="nav_item" id="contact_nav" href="/contact.html">Contact us</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     
     <main class="main-contact-us">
-        <div class="container contact-us">
-            <div class="row roww11">
-                <div class="info">
-                    <h1>GET IN TOUCH</h1>
-                </div>
-                <div class="info">
-                    <h3>Phone: 02055449898</h3>
-                </div>
-                <div class="info">
-                    <h3>Email: Everydaychalenge@gmail.com</h3>
-                </div>
-                <div class="info">
-                    <h3>Address: London wembley playground queenroad N1 2AD</h3>
-                </div>
-            </div>
-            <div class="row12 row">
-                <form action="/action_page.php">
-                    <div class="row">
-                      <div class="col-25">
-                        <label for="fname">First Name</label>
-                      </div>
-                      <div class="col-75">
-                        <input type="text" id="fname" name="firstname" placeholder="Your name">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-25">
-                        <label for="lname">Last Name</label>
-                      </div>
-                      <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name">
-                      </div>
-                    </div>
-                      <div class="row">
-                      <div class="col-25">
-                        <label for="email">Email address</label>
-                      </div>
-                      <div class="col-75">
-                        <input type="email" id="email" name="YourEmail" placeholder="Email address">
-                      </div>
-                    </div>
-                    
-                    <div class="row">
-                      <div class="col-25">
-                        <label for="subject">Comment</label>
-                      </div>
-                      <div class="col-75">
-                        <textarea id="subject" name="subject" placeholder="Comment" style="height:200px"></textarea>
-                      </div>
-                    </div>
-                    <br>
-                    <div class="btn-submit">
-                      <input type="submit" value="Submit">
-                    </div>
-                    </form>
-            </div>
 
-                
-        </div>
+      <h1>Get In Touch</h1>
+
+      <h3>Phone: 02055449898</h3>
+      <h3>Email: Everydaychalenge@gmail.com</h3>
+      <h3>Address: London wembley playground queenroad N1 2AD</h3>
+
+      <form class="contact-form-container">
+      
+        <input type="hidden" value="contact-form" name="access_key" />
+      
+        <label for="first_name">First name:</label>
+        <input class="input" type="text" name="first_name" id="first_name" placeholder="First Name" required />
+        <label for="last_name">Last name:</label>
+        <input class="input" type="text" name="last_name" id="last_name" placeholder="Last Name" required />
+        <label for="age">Age:</label>
+        <input class="input" type="number" name="quantity" id="age" placeholder="Age" min="16" required />
+        <label for="email">Email:</label>
+        <input class="input" type="text" name="email" id="email" placeholder="Email" required />
+      
+        <label for="found_where">Where did you hear about us?</label>
+        <input class="input" type="text" name="found_where" id="found_where" placeholder="Tell us where you heard about us!"
+          required />
+      
+      
+        <label for="requests">How can we help you?</label>
+        <textarea class="input" name="special_request" id="requests" rows="10" columns="10"
+          placeholder="Add your comments here"></textarea>
+      
+        <button> Submit </button>
+      
+      </form>
+
     </main>
     
     <footer>
