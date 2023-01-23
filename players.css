@@ -2,14 +2,17 @@
 
 .players-main-section {
     padding-top: 45px;
+    width: 1250px;
+    margin: auto;
 }
 
-h1 {
+.players-main-section h1 {
     margin: auto;
     padding-top: 30px;
     text-align: center;
     font-weight: 100;
     font-size: xx-large;
+    width: 80%;
 }
 
 h2 {
@@ -19,6 +22,58 @@ h2 {
 h4 {
     color: #576C59;
     font-weight: 100;
+}
+
+
+/* button to apply */
+
+.application-heading-container {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    line-height: 40px;
+    /* border: solid yellow 2px; */
+}
+
+.application-join {
+    display: flex;
+    text-align: center;
+    /* border: solid 2px red */
+}
+
+.application-join button {
+    color: white;
+    background-color: #576C59;
+    border: none;
+    border-radius: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 15px 0 15px 40px;
+}
+
+.application-join button:hover {
+    background-color: #ff6600;
+}
+
+@media only screen and (max-width: 1250px) {
+    .application-heading-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .application-join {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        /* justify-content: left; */
+    }
+
+    .application-join button {
+        margin: 15px 0 15px 0;
+    }
 }
 
 /* PLAYER IMAGES */
@@ -48,37 +103,5 @@ h4 {
 .player-card {
     display: flex;
     flex-direction: column;
-}
-
-/* button to apply */
-
-.application-heading-container {
-    display: flex;
-    justify-content: space-between;
-    vertical-align: middle;
-    line-height: 40px;
-    /* border: solid yellow 2px; */
-}
-
-.application-join {
-    display: flex;
-    text-align: center;
-    /* border: solid 2px red */
-}
-
-.application-join button {
-    color: white;
-    background-color: #576C59;
-    border: none;
-    border-radius: 1.5rem;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    font-size: 17px;;
-    padding: 1rem 2rem 1rem 2rem;
-    margin: 15px 0 15px 40px;
-}
-
-.application-join button:hover {
-    background-color: #ff6600;
 }
 
