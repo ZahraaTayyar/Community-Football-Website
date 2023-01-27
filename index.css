@@ -193,11 +193,25 @@ footer {
 
 .button_hero {
     padding: 0.5rem 2rem 0.5rem 2rem;
-    border: solid 1px grey;
+    border: solid 1px white;
     border-radius: 5rem;
     /* background-color: ; */
-    /* color: white; */
-    width: 150px;
+    color: black;
+    width: 175px;
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+.button_hero:hover {
+    background-color: #ff6600;
+    color: white;
+}
+
+@media only screen and (max-width: 700px) {
+    .button_hero {
+        margin-bottom: 10px;
+    }
 }
 
 /* ARTICLE */
@@ -225,7 +239,7 @@ footer ul {
 .contact_icon {
     height: 30px;
     width: 30px;
-    border: solid grey;
+    border: 2px solid grey;
     border-radius: 20px;
     padding: 10px;
     margin: 0 20px;
